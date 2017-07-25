@@ -1,0 +1,25 @@
+html, body {
+	margin: 0;
+	overflow: hidden;
+	background-color: black;
+}
+@keyframes question-animation {
+	50% {
+		top: 50%;
+		left: 50%;
+	}
+	100% {
+		/* We need one of these */
+	}
+}
+.question-mark {
+	position: absolute;
+	font-size: 30px;
+	animation-name: question-animation;
+    animation-duration:	1s;
+    animation-direction	forwards;
+	animation-iteration-count: 1;
+}
+.question-mark:after {
+	content: '?';
+}
