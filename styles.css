@@ -1,27 +1,34 @@
 html, body {
-	margin: 0;
-	overflow: hidden;
-	background-color: black;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    height: 100%;
+    width: 100%;
 }
 @keyframes question-animation {
-	to {
-		transform: rotate(360deg);
-	}
-	from {
-		transform: rotate(0deg);
-	}
+    to {
+        transform: rotate(360deg);
+    }
+    from {
+        transform: rotate(0deg);
+    }
 }
 .question-mark {
-	position: absolute;
-	font-size: 300px;
-	animation-name: question-animation;
-    animation-duration:	700ms;
+    position: absolute;
+    font-size: 300px;
+    font-family: Times New Roman;
+    animation-name: question-animation;
+    animation-duration:	500ms;
     animation-direction	forwards;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	transition: left 5s, top 5s;
-	transition-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: left 3s, top 3s;
+    transition-timing-function: linear;
 }
 .question-mark:after {
-	content: '?';
+    content: '?';
+}
+#question-marks {
+    height: 100%;
+    width: 100%;
 }
